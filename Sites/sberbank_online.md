@@ -22,7 +22,8 @@
         Object Identifier (2 5 4 15) = Private Organization
         Object Identifier (1 3 6 1 4 1 311 60 2 1 3) = RU
     WEB:
-        redirect from http://online.sberbank.ru to https://online.sberbank.ru/CSAFront/index.do
+        redirect from https://online.sberbank.ru to https://online.sberbank.ru/CSAFront/index.do
+        80 port closed
         Server response:
             HTTP/1.1 200 OK
             X-Powered-By	Servlet/3.0
@@ -49,6 +50,23 @@
                 Registration: /CSAFront/async/page/registration.do
             DO-files: Web-based Java program run by a Web server that supports Java, such as Tomcat or IBM WebSphere; 
                 typically mapped to the Struts controller, which processes the file; used for generating dynamic Web pages.
+            Login procedure:
+                POST https://online.sberbank.ru/CSAFront/login.do
+                fakeLogin	
+                fakePassword	
+                field(login)	ddd
+                field(password)	ddd
+                deviceprint	version=3.4.0.0_2&pm_fpua=mozilla/5.0 (windows nt 6.1; rv:38.0) gecko/20100101 firefox/38.0|5.0 (Windows)|Win32&pm_fpsc=24|1000|814|814&pm_fpsw=&pm_fptz=0&pm_fpln=lang=en-US|syslang=|userlang=&pm_fpjv=0&pm_fpco=1&pm_fpasw=&pm_fpan=Netscape&pm_fpacn=Mozilla&pm_fpol=true&pm_fposp=&pm_fpup=&pm_fpsaw=1000&pm_fpspd=24&pm_fpsbd=&pm_fpsdx=&pm_fpsdy=&pm_fpslx=&pm_fpsly=&pm_fpsfse=&pm_fpsui=&pm_os=Windows&pm_brmjv=38&pm_br=Firefox&pm_inpt=&pm_expt=
+                manvsmachinedetection	1,1,INPUT:text,3@1,3,0;1,4,0;1,3,0;1,4,0;1,3,0;1,1,0;1,1,0;1,1,0;1,4,0@0,1442906047516,0
+                htmlinjection	[object Object]
+                domElements	no_name,no_name,fakelogin,fakepassword,field(login),field(password),login,login,password
+                jsEvents	$,animator,authform,blackberrylocationcollector,divfloat,domdatacollection,fingerprint,floattostring,html5locationcollector,hashtable,ie,ie_fingerprint,iframerequest,interactionelement,joverlay,mozilla_fingerprint,opera_fingerprint,rsaobject,str2date,str2time,strcheck,timer,uielementlist,uievent,windows,__g_originalloginfunction,absposition,activexdetect,addadditionalmessage,addclearmasks,addelementtoform,adderror,addeventlistener,addeventlistenerex,addfield,addfieldwithcheck,addhidden,addinactiveesmessage,addmessage,addoption,addorderparameter,addparam2list,addswitchableevent,add_deviceprint
+                deviceTokenCookie	
+                operation	button.begin
                 
+                RESPONSE:
+                :Ошибка идентификации. Вы указали неправильный идентификатор/логин или неправильный пароль.
+                <input type="hidden" name="$$errorFlag"/>
 ```
-5. 
+5. No errors still found
+6. 0:0:0
