@@ -2,10 +2,30 @@
 
 1. Site: online.sberbank.ru
 2. Current datetime: 21.09.2015 22:53 Msk
-3. Browsed URLs: https://online.sberbank.ru/CSAFront/index.do
+3. Browsed URLs: 
+    https://online.sberbank.ru/CSAFront/index.do
+    https://online.sberbank.ru/CSAFront/login.do
 4. Research:
 ```
     IP: 194.54.14.131
+        Parent domain IP: 194.54.14.159
+        WHOIS
+        inetnum:        194.54.12.0 - 194.54.15.255
+        netname:        PVBSBRF-NET
+        domain: SBERBANK.RU
+        nserver: ns2.gldn.net.
+        nserver: ns3.gldn.net.
+        nserver: shark11.sberbank.ru. 194.186.207.33
+        nserver: shark12.sberbank.ru. 194.186.207.34
+        state: REGISTERED, DELEGATED, VERIFIED
+        org: "Sberbank of Russia" PJSC
+        registrar: RU-CENTER-RU
+        admin-contact: https://www.nic.ru/whois
+        created: 2008.07.25
+        paid-till: 2016.07.25
+        free-date: 2016.08.25
+        source: TCI
+        Last updated on 2015.09.22 10:31:32 MSK
     HTTPS cert: 
         Owner: Sberbank of Russia OJSC
         Verified: thawte, Inc.
