@@ -5,4 +5,4 @@
 3. Define opened URLs
 4. Set finded keywords, used engines
 5. Check for errors
-6. Set results
+6. Set results: vulnerabilities, errors, alerts
